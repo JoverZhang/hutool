@@ -2,10 +2,18 @@ package cn.hutool.cache;
 
 import cn.hutool.cache.impl.WeakCache;
 import cn.hutool.core.lang.Console;
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+=======
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+>>>>>>> 0a9627809 (release 5.8.37)
 public class WeakCacheTest {
 
 	@Test
@@ -25,7 +33,11 @@ public class WeakCacheTest {
 	@Test
 	@Disabled
 	public void removeByGcTest(){
+<<<<<<< HEAD
 		// https://gitee.com/dromara/hutool/issues/I51O7M
+=======
+		// https://gitee.com/chinabugotech/hutool/issues/I51O7M
+>>>>>>> 0a9627809 (release 5.8.37)
 		WeakCache<String, String> cache = new WeakCache<>(-1);
 		cache.put("a", "1");
 		cache.put("b", "2");

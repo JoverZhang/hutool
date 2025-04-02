@@ -35,9 +35,15 @@ public class NamingCaseTest {
 				.set("H#case", "H#case")
 				.set("PNLabel", "PN_label")
 				.set("wPRunOZTime", "w_P_run_OZ_time")
+<<<<<<< HEAD
 				// https://github.com/dromara/hutool/issues/2070
 				.set("customerNickV2", "customer_nick_v2")
 				// https://gitee.com/dromara/hutool/issues/I4X9TT
+=======
+				// https://github.com/chinabugotech/hutool/issues/2070
+				.set("customerNickV2", "customer_nick_v2")
+				// https://gitee.com/chinabugotech/hutool/issues/I4X9TT
+>>>>>>> 0a9627809 (release 5.8.37)
 				.set("DEPT_NAME","DEPT_NAME")
 				.forEach((key, value) -> assertEquals(value, NamingCase.toUnderlineCase(key)));
 	}

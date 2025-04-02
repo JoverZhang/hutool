@@ -2,6 +2,33 @@
 # 🚀Changelog
 
 -------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
+=======
+# 5.8.37(2025-03-31)
+
+### 🐣新特性
+* 【json   】      ObjectMapper删除重复trim（pr#3859@Github）
+* 【core   】      `FileWriter`增加方法，可选是否追加换行符（issue#3858@Github）
+* 【core   】      `IdcardUtil`验证10位身份证兼容中英文括号（issue#IBP6T1@Gitee）
+* 【extra  】      `PinyinUtil`增加重载可选是否返回声调（pr#3875@Github）
+* 【http   】      `HttpBase`增加重载可选是否返回声调（pr#3883@Github）
+* 【core   】      增加`VersionUtil`版本比较工具（pr#3876@Github）
+* 【db     】      增加GoldenDB识别（pr#3886@Github）
+* 【http   】      改进`UrlQuery`对无参URL增加判断识别（issue#IBRVE4@Gitee）
+* 【core   】      改进`PropDesc`中去除Transient引用避免NoClassDefFoundError（issue#3901@Github）
+* 【core   】      `StrUtil.isBlank`增加`\u200c`判断（issue#3903@Github）
+* 【core   】      优化`CombinationAnnotationElement`注解数组性能（pr#1323@Gitee）
+* 【core   】      完善季度相关 API（pr#1324@Gitee）
+
+### 🐞Bug修复
+* 【setting】      修复`SettingLoader`load未抛出异常导致配置文件无法正常遍历的问题（pr#3868@Github）
+* 【cache  】      修复`ReentrantCache#getOrRemoveExpired`方法丢失onRemove触发问题（pr#1315@Gitee）
+* 【json   】      修复`JsonUtil.toBean`泛型数组类型丢失问题（pr#3876@Github）
+* 【http   】      修复`HttpUtil.normalizeParams`规则问题（issue#IBQIYQ@Gitee）
+* 【http   】      修复`NumberChineseFormatter.format`中自定义单位在0时错误问题（issue#3888@Github）
+
+-------------------------------------------------------------------------------------------------------------
+>>>>>>> 0a9627809 (release 5.8.37)
 # 5.8.36(2025-02-18)
 
 ### 🐣新特性
@@ -1081,4 +1108,8 @@
 * 【core   】     修复农历转公历在闰月时错误（issue#I4ZSGJ@Gitee）
 
 # 5.7.x 或更早版本
+<<<<<<< HEAD
 * [https://gitee.com/dromara/hutool/blob/v5-master/CHANGELOG_5.0-5.7.md](https://gitee.com/dromara/hutool/blob/v5-master/CHANGELOG_5.0-5.7.md)
+=======
+* [https://gitee.com/chinabugotech/hutool/blob/v5-master/CHANGELOG_5.0-5.7.md](https://gitee.com/chinabugotech/hutool/blob/v5-master/CHANGELOG_5.0-5.7.md)
+>>>>>>> 0a9627809 (release 5.8.37)

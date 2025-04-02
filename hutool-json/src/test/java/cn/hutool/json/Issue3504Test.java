@@ -1,11 +1,21 @@
 package cn.hutool.json;
 
 import lombok.Data;
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 /**
  * https://github.com/dromara/hutool/issues/3504
+=======
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+/**
+ * https://github.com/chinabugotech/hutool/issues/3504
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class Issue3504Test {
 

@@ -8,7 +8,11 @@ import java.io.File;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/issues/IAB65V
+=======
+ * https://gitee.com/chinabugotech/hutool/issues/IAB65V
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class IssueIAB65VTest {
 	@Test

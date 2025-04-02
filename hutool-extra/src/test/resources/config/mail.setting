@@ -13,7 +13,11 @@ from = 小磊<hutool@yeah.net>
 # 用户名（注意：如果使用foxmail邮箱，此处user为qq号）
 user = hutool@yeah.net
 # 密码
+<<<<<<< HEAD
 pass = q1w2e3
+=======
+pass = 123456
+>>>>>>> 0a9627809 (release 5.8.37)
 # 使用 STARTTLS安全连接
 starttlsEnable = true
 # 是否开启SSL

@@ -25,7 +25,11 @@ public class CalendarUtilTest {
 			final Calendar calendar = CalendarUtil.parse("2021-09-27 00:00:112323", false,
 				DatePattern.NORM_DATETIME_FORMAT);
 
+<<<<<<< HEAD
 			// https://github.com/dromara/hutool/issues/1849
+=======
+			// https://github.com/chinabugotech/hutool/issues/1849
+>>>>>>> 0a9627809 (release 5.8.37)
 			// 在使用严格模式时，秒不正确，抛出异常
 			DateUtil.date(calendar);
 		});

@@ -11,7 +11,11 @@ import java.util.Currency;
 /**
  * 单币种货币类，处理货币算术、币种和取整。
  * <p>
+<<<<<<< HEAD
  * 感谢提供此方法的用户：https://github.com/dromara/hutool/issues/605
+=======
+ * 感谢提供此方法的用户：https://github.com/chinabugotech/hutool/issues/605
+>>>>>>> 0a9627809 (release 5.8.37)
  *
  * <p>
  * 货币类中封装了货币金额和币种。目前金额在内部是long类型表示，

@@ -36,7 +36,11 @@ public class NumberWithFormat extends Number implements TypeConverter {
 		// 自定义日期格式
 		if (null != this.format && targetType instanceof Class) {
 			final Class<?> clazz = (Class<?>) targetType;
+<<<<<<< HEAD
 			// https://gitee.com/dromara/hutool/issues/I6IS5B
+=======
+			// https://gitee.com/chinabugotech/hutool/issues/I6IS5B
+>>>>>>> 0a9627809 (release 5.8.37)
 			if (Date.class.isAssignableFrom(clazz)) {
 				return new DateConverter((Class<? extends Date>) clazz, format).convert(this.number, null);
 			} else if (TemporalAccessor.class.isAssignableFrom(clazz)) {

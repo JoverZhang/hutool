@@ -10,7 +10,11 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/pulls/532
+=======
+ * https://gitee.com/chinabugotech/hutool/pulls/532
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class MetroHashTest {
 

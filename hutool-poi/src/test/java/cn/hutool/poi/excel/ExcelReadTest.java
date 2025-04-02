@@ -247,7 +247,11 @@ public class ExcelReadTest {
 
 	@Test
 	public void readColumnNPETest() {
+<<<<<<< HEAD
 		// https://github.com/dromara/hutool/pull/2234
+=======
+		// https://github.com/chinabugotech/hutool/pull/2234
+>>>>>>> 0a9627809 (release 5.8.37)
 		ExcelReader reader = ExcelUtil.getReader(ResourceUtil.getStream("read_row_npe.xlsx"));
 		reader.readColumn(0, 1);
 	}

@@ -52,7 +52,11 @@ public class UrlQueryTest {
 
 	@Test
 	public void parseTest4(){
+<<<<<<< HEAD
 		// https://github.com/dromara/hutool/issues/1989
+=======
+		// https://github.com/chinabugotech/hutool/issues/1989
+>>>>>>> 0a9627809 (release 5.8.37)
 		String queryStr = "imageMogr2/thumbnail/x800/format/jpg";
 		final UrlQuery query = UrlQuery.of(queryStr, CharsetUtil.CHARSET_UTF_8);
 		assertEquals(queryStr, query.toString());

@@ -124,7 +124,11 @@ public class HttpConnection {
 					HttpGlobalConfig.allowPatch();
 				} catch (Exception ignore){
 					// ignore
+<<<<<<< HEAD
 					// https://github.com/dromara/hutool/issues/2832
+=======
+					// https://github.com/chinabugotech/hutool/issues/2832
+>>>>>>> 0a9627809 (release 5.8.37)
 				}
 			}
 		}
@@ -230,6 +234,35 @@ public class HttpConnection {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * 设置请求头<br>
+	 * 不覆盖原有请求头并判断是否需要聚合请求头
+	 *
+	 * @param headerMap 请求头
+	 * @param isOverride 是否覆盖
+	 * @param isHeaderAggregated 是否聚合
+	 * @return this
+	 * @since 5.8.37
+	 */
+	public HttpConnection header(Map<String, List<String>> headerMap, boolean isOverride, boolean isHeaderAggregated) {
+		if (!isHeaderAggregated){
+			return header(headerMap,isOverride);
+		}
+		if (MapUtil.isNotEmpty(headerMap)) {
+			String name;
+			for (Entry<String, List<String>> entry : headerMap.entrySet()) {
+				name = entry.getKey();
+				List<String> values = entry.getValue();
+				String headValues = StrUtil.join(",", values);
+				this.header(name, StrUtil.nullToEmpty(headValues), true);
+			}
+		}
+		return this;
+	}
+
+	/**
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * 获取Http请求头
 	 *
 	 * @param name Header名
@@ -277,7 +310,11 @@ public class HttpConnection {
 			final HttpsURLConnection httpsConn = (HttpsURLConnection) conn;
 			// 验证域
 			httpsConn.setHostnameVerifier(ObjectUtil.defaultIfNull(hostnameVerifier,
+<<<<<<< HEAD
 				// CVE-2022-22885 https://github.com/dromara/hutool/issues/2042
+=======
+				// CVE-2022-22885 https://github.com/chinabugotech/hutool/issues/2042
+>>>>>>> 0a9627809 (release 5.8.37)
 				// 增加全局变量可选是否不验证host
 				HttpGlobalConfig.isTrustAnyHost() ? DefaultSSLInfo.TRUST_ANY_HOSTNAME_VERIFIER : HttpsURLConnection.getDefaultHostnameVerifier()));
 			httpsConn.setSSLSocketFactory(ObjectUtil.defaultIfNull(ssf, DefaultSSLInfo.DEFAULT_SSF));

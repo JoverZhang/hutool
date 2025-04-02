@@ -8,10 +8,17 @@
 
 	<groupId>cn.hutool</groupId>
 	<artifactId>hutool-parent</artifactId>
+<<<<<<< HEAD
 	<version>5.8.36</version>
 	<name>hutool</name>
 	<description>Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”。</description>
 	<url>https://github.com/dromara/hutool</url>
+=======
+	<version>5.8.37</version>
+	<name>hutool</name>
+	<description>Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”。</description>
+	<url>https://github.com/chinabugotech/hutool</url>
+>>>>>>> 0a9627809 (release 5.8.37)
 
 	<modules>
 		<module>hutool-all</module>
@@ -58,6 +65,15 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+<<<<<<< HEAD
+=======
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-params</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+>>>>>>> 0a9627809 (release 5.8.37)
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
@@ -67,7 +83,11 @@
 
 	<issueManagement>
 		<system>Github Issue</system>
+<<<<<<< HEAD
 		<url>https://github.com/dromara/hutool/issues</url>
+=======
+		<url>https://github.com/chinabugotech/hutool/issues</url>
+>>>>>>> 0a9627809 (release 5.8.37)
 	</issueManagement>
 
 	<licenses>
@@ -79,15 +99,28 @@
 
 	<developers>
 		<developer>
+<<<<<<< HEAD
+=======
+			<name>bugo</name>
+			<email>bugo@bugotech.cn</email>
+		</developer>
+		<developer>
+>>>>>>> 0a9627809 (release 5.8.37)
 			<name>Looly</name>
 			<email>loolly@gmail.com</email>
 		</developer>
 	</developers>
 
 	<scm>
+<<<<<<< HEAD
 		<connection>scm:git@github.com:dromara/hutool.git</connection>
 		<developerConnection>scm:git@github.com:dromara/hutool.git</developerConnection>
 		<url>git@github.com:dromara/hutool.git</url>
+=======
+		<connection>scm:git@github.com:chinabugotech/hutool.git</connection>
+		<developerConnection>scm:git@github.com:chinabugotech/hutool.git</developerConnection>
+		<url>git@github.com:chinabugotech/hutool.git</url>
+>>>>>>> 0a9627809 (release 5.8.37)
 	</scm>
 
 	<build>
@@ -207,6 +240,7 @@
 						</executions>
 					</plugin>
 					<plugin>
+<<<<<<< HEAD
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>
 						<version>1.7.0</version>
@@ -215,6 +249,18 @@
 							<serverId>oss</serverId>
 							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+=======
+						<groupId>org.sonatype.central</groupId>
+						<artifactId>central-publishing-maven-plugin</artifactId>
+						<version>0.7.0</version>
+						<extensions>true</extensions>
+						<configuration>
+							<publishingServerId>central</publishingServerId>
+							<!-- 自动发布 -->
+							<autoPublish>false</autoPublish>
+							<!-- 等待发布 -->
+							<waitUntil>published</waitUntil>
+>>>>>>> 0a9627809 (release 5.8.37)
 						</configuration>
 					</plugin>
 				</plugins>

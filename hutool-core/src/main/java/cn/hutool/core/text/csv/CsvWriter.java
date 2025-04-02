@@ -363,7 +363,11 @@ public final class CsvWriter implements Closeable, Flushable, Serializable {
 	@Override
 	public void close() {
 		if(this.config.endingLineBreak){
+<<<<<<< HEAD
 			//https://gitee.com/dromara/hutool/issues/I75K5G
+=======
+			//https://gitee.com/chinabugotech/hutool/issues/I75K5G
+>>>>>>> 0a9627809 (release 5.8.37)
 			writeLine();
 		}
 		IoUtil.close(this.writer);

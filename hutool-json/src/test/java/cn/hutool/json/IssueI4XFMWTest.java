@@ -9,7 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/issues/I4XFMW
+=======
+ * https://gitee.com/chinabugotech/hutool/issues/I4XFMW
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class IssueI4XFMWTest {
 

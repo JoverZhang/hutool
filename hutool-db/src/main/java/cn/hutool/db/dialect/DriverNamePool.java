@@ -116,4 +116,11 @@ public interface DriverNamePool {
 	 * JDBC 驱动 OpenGauss
 	 */
 	String DRIVER_OPENGAUSS = "org.opengauss.Driver";
+<<<<<<< HEAD
+=======
+	/**
+	 * JDBC 驱动 GoldenDB
+	 */
+	String DRIVER_GOLDENDB = "com.goldendb.jdbc.Driver";
+>>>>>>> 0a9627809 (release 5.8.37)
 }

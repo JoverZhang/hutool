@@ -5,11 +5,19 @@ import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.crypto.KeyUtil;
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.symmetric.ZUC;
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
+=======
+>>>>>>> 0a9627809 (release 5.8.37)
 import org.junit.jupiter.api.Test;
 
 import javax.crypto.spec.IvParameterSpec;
 
+<<<<<<< HEAD
+=======
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+>>>>>>> 0a9627809 (release 5.8.37)
 /**
  * Hmac单元测试
  * @author Looly
@@ -84,7 +92,11 @@ public class HmacTest {
 
 	@Test
 	public void sm4CMACTest(){
+<<<<<<< HEAD
 		// https://github.com/dromara/hutool/issues/2206
+=======
+		// https://github.com/chinabugotech/hutool/issues/2206
+>>>>>>> 0a9627809 (release 5.8.37)
 		final byte[] key = new byte[16];
 		HMac mac = new HMac(HmacAlgorithm.SM4CMAC,
 				KeyUtil.generateKey("SM4", key));

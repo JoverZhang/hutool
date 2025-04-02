@@ -7,7 +7,11 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/issues/IAGYDG
+=======
+ * https://gitee.com/chinabugotech/hutool/issues/IAGYDG
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class IssueIAGYDGTest {
 	@Test

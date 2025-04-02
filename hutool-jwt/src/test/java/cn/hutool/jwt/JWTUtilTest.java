@@ -47,7 +47,11 @@ public class JWTUtilTest {
 	@Test
 	public void parseNullTest(){
 		assertThrows(IllegalArgumentException.class, () -> {
+<<<<<<< HEAD
 			// https://gitee.com/dromara/hutool/issues/I5OCQB
+=======
+			// https://gitee.com/chinabugotech/hutool/issues/I5OCQB
+>>>>>>> 0a9627809 (release 5.8.37)
 			JWTUtil.parseToken(null);
 		});
 	}

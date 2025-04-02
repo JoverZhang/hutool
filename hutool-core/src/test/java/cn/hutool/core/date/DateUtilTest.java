@@ -1002,7 +1002,11 @@ public class DateUtilTest {
 
 	@Test
 	public void parseNotFitTest() {
+<<<<<<< HEAD
 		//https://github.com/dromara/hutool/issues/1332
+=======
+		//https://github.com/chinabugotech/hutool/issues/1332
+>>>>>>> 0a9627809 (release 5.8.37)
 		assertThrows(DateException.class, () -> {
 			// 在日期格式不匹配的时候，测试是否正常报错
 			DateUtil.parse("2020-12-23", DatePattern.PURE_DATE_PATTERN);

@@ -6,14 +6,25 @@ import cn.hutool.crypto.digest.mac.SM4MacEngine;
 import org.bouncycastle.crypto.CipherParameters;
 import org.bouncycastle.crypto.params.KeyParameter;
 import org.bouncycastle.crypto.params.ParametersWithIV;
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+=======
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+>>>>>>> 0a9627809 (release 5.8.37)
 public class CBCBlockCipherMacEngineTest {
 
 	@Test
 	public void SM4CMACTest(){
+<<<<<<< HEAD
 		// https://github.com/dromara/hutool/issues/2206
+=======
+		// https://github.com/chinabugotech/hutool/issues/2206
+>>>>>>> 0a9627809 (release 5.8.37)
 		final byte[] key = new byte[16];
 		final CipherParameters parameter = new KeyParameter(KeyUtil.generateKey("SM4", key).getEncoded());
 		Mac mac = new Mac(new SM4MacEngine(parameter));
@@ -27,7 +38,11 @@ public class CBCBlockCipherMacEngineTest {
 
 	@Test
 	public void SM4CMACWithIVTest(){
+<<<<<<< HEAD
 		// https://github.com/dromara/hutool/issues/2206
+=======
+		// https://github.com/chinabugotech/hutool/issues/2206
+>>>>>>> 0a9627809 (release 5.8.37)
 		final byte[] key = new byte[16];
 		final byte[] iv = new byte[16];
 		CipherParameters parameter = new KeyParameter(KeyUtil.generateKey("SM4", key).getEncoded());

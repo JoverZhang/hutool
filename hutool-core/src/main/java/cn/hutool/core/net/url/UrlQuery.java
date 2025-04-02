@@ -222,6 +222,12 @@ public class UrlQuery {
 				if (StrUtil.isBlank(queryStr)) {
 					return this;
 				}
+<<<<<<< HEAD
+=======
+			} else if(StrUtil.startWith(queryStr, "http://") || StrUtil.startWith(queryStr, "https://")){
+				// issue#IBRVE4 用户传入只有URL，没有param部分，返回空
+				return this;
+>>>>>>> 0a9627809 (release 5.8.37)
 			}
 		}
 

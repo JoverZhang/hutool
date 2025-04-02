@@ -19,7 +19,11 @@ import org.junit.jupiter.api.Test;
 import java.sql.SQLException;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/issues/I73770
+=======
+ * https://gitee.com/chinabugotech/hutool/issues/I73770
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class IssueI73770Test {
 	@Test

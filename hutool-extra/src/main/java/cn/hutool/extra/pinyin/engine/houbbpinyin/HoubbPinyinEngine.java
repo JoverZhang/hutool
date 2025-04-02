@@ -66,9 +66,33 @@ public class HoubbPinyinEngine implements PinyinEngine {
 	}
 
 	@Override
+<<<<<<< HEAD
+=======
+	public String getPinyin(char c, boolean tone) {
+		if (tone){
+			return  PinyinHelper.toPinyin(String.valueOf(c), PinyinStyleEnum.DEFAULT);
+		}else {
+			return  getPinyin(c);
+		}
+	}
+
+	@Override
+>>>>>>> 0a9627809 (release 5.8.37)
 	public String getPinyin(String str, String separator) {
 		String result;
 		result = PinyinHelper.toPinyin(str, format, separator);
 		return result;
 	}
+<<<<<<< HEAD
+=======
+
+	@Override
+	public String getPinyin(String str, String separator, boolean tone) {
+			if(tone){
+				return PinyinHelper.toPinyin(str, PinyinStyleEnum.DEFAULT, separator);
+			}else {
+				return getPinyin(str,separator);
+			}
+	}
+>>>>>>> 0a9627809 (release 5.8.37)
 }

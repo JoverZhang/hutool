@@ -42,6 +42,10 @@ public class DialectFactoryTest {
 		map.put("oscar",DRIVER_OSCAR);
 		map.put("sybase",DRIVER_SYBASE);
 		map.put("mariadb",DRIVER_MARIADB);
+<<<<<<< HEAD
+=======
+		map.put("goldendb",DRIVER_GOLDENDB);
+>>>>>>> 0a9627809 (release 5.8.37)
 
 
 		map.forEach((k,v) -> assertEquals(v,

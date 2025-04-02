@@ -39,7 +39,11 @@ public class EscapeUtilTest {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * https://gitee.com/dromara/hutool/issues/I49JU8
+=======
+	 * https://gitee.com/chinabugotech/hutool/issues/I49JU8
+>>>>>>> 0a9627809 (release 5.8.37)
 	 */
 	@Test
 	public void escapeAllTest2(){

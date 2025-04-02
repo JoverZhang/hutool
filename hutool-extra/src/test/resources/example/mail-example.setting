@@ -13,7 +13,11 @@ from = 小磊<hutool@yeah.net>
 # 用户名
 user = hutool
 # 密码
+<<<<<<< HEAD
 pass = q1w2e3
+=======
+pass = 123456
+>>>>>>> 0a9627809 (release 5.8.37)
 
 # 是否打开调试模式，调试模式会显示与邮件服务器通信过程，默认不开启
 debug = true

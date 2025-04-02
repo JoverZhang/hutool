@@ -5,7 +5,11 @@ import org.junit.jupiter.api.Test;
 
 public class Issue2981Test {
 	/**
+<<<<<<< HEAD
 	 * https://github.com/dromara/hutool/issues/2981<br>
+=======
+	 * https://github.com/chinabugotech/hutool/issues/2981<br>
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * 按照ISO8601规范，以Z结尾表示UTC时间，否则为当地时间
 	 */
 	@SuppressWarnings("DataFlowIssue")

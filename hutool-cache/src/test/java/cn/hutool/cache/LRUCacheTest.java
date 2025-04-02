@@ -4,15 +4,25 @@ import cn.hutool.cache.impl.LRUCache;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
+=======
+>>>>>>> 0a9627809 (release 5.8.37)
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
+<<<<<<< HEAD
 /**
  * 见：https://github.com/dromara/hutool/issues/1895<br>
+=======
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * 见：https://github.com/chinabugotech/hutool/issues/1895<br>
+>>>>>>> 0a9627809 (release 5.8.37)
  * 并发问题测试，在5.7.15前，LRUCache存在并发问题，多线程get后，map结构变更，导致null的位置不确定，
  * 并可能引起死锁。
  */
@@ -21,7 +31,11 @@ public class LRUCacheTest {
 	@Test
 	@Disabled
 	public void putTest(){
+<<<<<<< HEAD
 		//https://github.com/dromara/hutool/issues/2227
+=======
+		//https://github.com/chinabugotech/hutool/issues/2227
+>>>>>>> 0a9627809 (release 5.8.37)
 		final LRUCache<String, String> cache = CacheUtil.newLRUCache(100, 10);
 		for (int i = 0; i < 10000; i++) {
 			//ThreadUtil.execute(()-> cache.put(RandomUtil.randomString(5), "1243", 10));

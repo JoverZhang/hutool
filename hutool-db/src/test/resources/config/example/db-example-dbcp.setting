@@ -48,4 +48,8 @@ testOnBorrow = false
 # (boolean) 指明是否在归还到池中前进行检验 注意： 设置为true 后如果要生效，validationQuery 参数必须设置为非空字符串
 testOnReturn = false
 # (boolean) 指明连接是否被空闲连接回收器( 如果有) 进行检验。 如果检测失败， 则连接将被从池中去除。注意： 设置为true 后如果要生效，validationQuery 参数必须设置为非空字符串
+<<<<<<< HEAD
 testWhileIdle = false
+=======
+testWhileIdle = false
+>>>>>>> 0a9627809 (release 5.8.37)

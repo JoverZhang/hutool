@@ -6,7 +6,10 @@ import cn.hutool.core.util.ArrayUtil;
 import java.io.Serializable;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
+<<<<<<< HEAD
 import java.util.Arrays;
+=======
+>>>>>>> 0a9627809 (release 5.8.37)
 import java.util.Collection;
 import java.util.Map;
 import java.util.function.Predicate;
@@ -103,7 +106,13 @@ public class CombinationAnnotationElement implements AnnotatedElement, Serializa
 		parseDeclared(declaredAnnotations);
 
 		final Annotation[] annotations = element.getAnnotations();
+<<<<<<< HEAD
 		if (Arrays.equals(declaredAnnotations, annotations)) {
+=======
+		// pr#1323 如果子类重写了父类的注解，虽然两者数组内部元素一样的，但是数组中的顺序可能不一样
+		// getAnnotations()的包含父类，getDeclaredAnnotations()不包含父类。他们两是一个包含关系，只会存在后者的注解元素大于等于前者的情况。
+		if (declaredAnnotations.length == annotations.length) {
+>>>>>>> 0a9627809 (release 5.8.37)
 			this.annotationMap = this.declaredAnnotationMap;
 		} else {
 			this.annotationMap = new TableMap<>();

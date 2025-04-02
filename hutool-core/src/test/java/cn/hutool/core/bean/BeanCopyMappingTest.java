@@ -10,7 +10,11 @@ import org.junit.jupiter.api.Test;
 public class BeanCopyMappingTest {
 
 	/**
+<<<<<<< HEAD
 	 * https://gitee.com/dromara/hutool/issues/I4C48U <br>
+=======
+	 * https://gitee.com/chinabugotech/hutool/issues/I4C48U <br>
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * 传递复制不要用注解别名，应该用动态映射
 	 */
 	@Test

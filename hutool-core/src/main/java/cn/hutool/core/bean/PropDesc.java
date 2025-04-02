@@ -8,7 +8,10 @@ import cn.hutool.core.util.ModifierUtil;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.TypeUtil;
 
+<<<<<<< HEAD
 import java.beans.Transient;
+=======
+>>>>>>> 0a9627809 (release 5.8.37)
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
@@ -21,6 +24,14 @@ import java.lang.reflect.Type;
 public class PropDesc {
 
 	/**
+<<<<<<< HEAD
+=======
+	 * Transient注解的类名
+	 */
+	private static final String TRANSIENT_CLASS_NAME = "java.beans.Transient";
+
+	/**
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * 字段
 	 */
 	final Field field;
@@ -363,7 +374,10 @@ public class PropDesc {
 	 * @return 是否为Transient关键字修饰的
 	 * @since 5.3.11
 	 */
+<<<<<<< HEAD
 	@SuppressWarnings({"rawtypes", "unchecked"})
+=======
+>>>>>>> 0a9627809 (release 5.8.37)
 	private boolean isTransientForGet() {
 		boolean isTransient = ModifierUtil.hasModifier(this.field, ModifierUtil.ModifierType.TRANSIENT);
 
@@ -373,6 +387,7 @@ public class PropDesc {
 
 			// 检查注解
 			if (false == isTransient) {
+<<<<<<< HEAD
 				//isTransient = AnnotationUtil.hasAnnotation(this.getter, Transient.class);
 				Class aClass = null;
 				try {
@@ -384,6 +399,9 @@ public class PropDesc {
 				if(null != aClass){
 					isTransient = AnnotationUtil.hasAnnotation(this.getter, aClass);
 				}
+=======
+				isTransient = AnnotationUtil.hasAnnotation(this.getter, TRANSIENT_CLASS_NAME);
+>>>>>>> 0a9627809 (release 5.8.37)
 			}
 		}
 
@@ -405,7 +423,11 @@ public class PropDesc {
 
 			// 检查注解
 			if (false == isTransient) {
+<<<<<<< HEAD
 				isTransient = AnnotationUtil.hasAnnotation(this.setter, Transient.class);
+=======
+				isTransient = AnnotationUtil.hasAnnotation(this.setter, TRANSIENT_CLASS_NAME);
+>>>>>>> 0a9627809 (release 5.8.37)
 			}
 		}
 

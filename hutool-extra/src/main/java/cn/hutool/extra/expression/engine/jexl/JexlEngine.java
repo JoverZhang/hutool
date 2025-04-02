@@ -29,7 +29,11 @@ public class JexlEngine implements ExpressionEngine {
 		try{
 			return engine.createExpression(expression).evaluate(mapContext);
 		} catch (Exception ignore){
+<<<<<<< HEAD
 			// https://gitee.com/dromara/hutool/issues/I4B70D
+=======
+			// https://gitee.com/chinabugotech/hutool/issues/I4B70D
+>>>>>>> 0a9627809 (release 5.8.37)
 			// 支持脚本
 			return engine.createScript(expression).execute(mapContext);
 		}

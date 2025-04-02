@@ -12,7 +12,11 @@ import java.util.Map;
 public class Issue2202Test {
 
 	/**
+<<<<<<< HEAD
 	 * https://github.com/dromara/hutool/issues/2202
+=======
+	 * https://github.com/chinabugotech/hutool/issues/2202
+>>>>>>> 0a9627809 (release 5.8.37)
 	 */
 	@Test
 	public void mapToBeanWithFieldNameEditorTest(){

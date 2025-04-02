@@ -224,7 +224,11 @@ public class HttpGlobalConfig implements Serializable {
 
 	/**
 	 * 是否信任所有Host<br>
+<<<<<<< HEAD
 	 * 见：https://github.com/dromara/hutool/issues/2042<br>
+=======
+	 * 见：https://github.com/chinabugotech/hutool/issues/2042<br>
+>>>>>>> 0a9627809 (release 5.8.37)
 	 *
 	 * @param customTrustAnyHost 如果设置为{@code false}，则按照JDK默认验证机制，验证目标服务器的证书host和请求host是否一致，{@code true}表示不验证。
 	 * @since 5.8.27

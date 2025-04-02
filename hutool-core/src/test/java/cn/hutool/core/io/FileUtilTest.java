@@ -4,6 +4,10 @@ import cn.hutool.core.collection.ListUtil;
 import cn.hutool.core.io.file.LineSeparator;
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.CharsetUtil;
+<<<<<<< HEAD
+=======
+import org.junit.jupiter.api.Assertions;
+>>>>>>> 0a9627809 (release 5.8.37)
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -538,22 +542,46 @@ public class FileUtilTest {
 	@Test
 	public void getTotalLinesTest() {
 		// 此文件最后一行有换行符，则最后的空行算作一行
+<<<<<<< HEAD
 		final int totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines.csv"));
 		assertEquals(8, totalLines);
+=======
+		int totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines.csv"));
+		assertEquals(8, totalLines);
+
+		totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines.csv"), -1, false);
+		Assertions.assertEquals(7, totalLines);
+>>>>>>> 0a9627809 (release 5.8.37)
 	}
 
 	@Test
 	public void getTotalLinesCrTest() {
 		// 此文件最后一行有换行符，则最后的空行算作一行
+<<<<<<< HEAD
 		final int totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines_cr.csv"));
 		assertEquals(8, totalLines);
+=======
+		int totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines_cr.csv"));
+		assertEquals(8, totalLines);
+
+		totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines_cr.csv"), -1, false);
+		Assertions.assertEquals(7, totalLines);
+>>>>>>> 0a9627809 (release 5.8.37)
 	}
 
 	@Test
 	public void getTotalLinesCrlfTest() {
 		// 此文件最后一行有换行符，则最后的空行算作一行
+<<<<<<< HEAD
 		final int totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines_crlf.csv"));
 		assertEquals(8, totalLines);
+=======
+		int totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines_crlf.csv"));
+		assertEquals(8, totalLines);
+
+		totalLines = FileUtil.getTotalLines(FileUtil.file("test_lines_crlf.csv"), -1, false);
+		Assertions.assertEquals(7, totalLines);
+>>>>>>> 0a9627809 (release 5.8.37)
 	}
 
 	@Test

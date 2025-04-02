@@ -1,8 +1,15 @@
 package cn.hutool.core.util;
 
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+=======
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+>>>>>>> 0a9627809 (release 5.8.37)
 public class CharUtilTest {
 
 	@Test
@@ -43,6 +50,12 @@ public class CharUtilTest {
 
 		final char a5 = ' ';
 		assertTrue(CharUtil.isBlankChar(a5));
+<<<<<<< HEAD
+=======
+
+		final char a6 = '\u200c';
+		assertTrue(CharUtil.isBlankChar(a6));
+>>>>>>> 0a9627809 (release 5.8.37)
 	}
 
 	@Test

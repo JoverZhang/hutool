@@ -30,7 +30,11 @@ public class IssueI74EX7Test {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * https://gitee.com/dromara/hutool/issues/I74EX7<br>
+=======
+	 * https://gitee.com/chinabugotech/hutool/issues/I74EX7<br>
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * Enhancer.create()默认调用无参构造，有参构造或者多个构造没有很好的兼容。
 	 *
 	 */
@@ -42,7 +46,11 @@ public class IssueI74EX7Test {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * https://gitee.com/dromara/hutool/issues/I74EX7<br>
+=======
+	 * https://gitee.com/chinabugotech/hutool/issues/I74EX7<br>
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * Enhancer.create()默认调用无参构造，有参构造或者多个构造没有很好的兼容。
 	 *
 	 */

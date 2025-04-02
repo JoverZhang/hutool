@@ -11,7 +11,11 @@
       "charset": "UTF-8",
       "debug": false,
       "auth": true,
+<<<<<<< HEAD
       "pass": "q1w2e3",
+=======
+      "pass": "123456",
+>>>>>>> 0a9627809 (release 5.8.37)
       "socketFactoryFallback": false,
       "socketFactoryPort": 465,
       "startttlsEnable": false,

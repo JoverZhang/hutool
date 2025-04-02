@@ -7,7 +7,11 @@ import java.lang.reflect.Type;
 import java.util.Map;
 
 /**
+<<<<<<< HEAD
  * 见：https://gitee.com/dromara/hutool/pulls/447/files
+=======
+ * 见：https://gitee.com/chinabugotech/hutool/pulls/447/files
+>>>>>>> 0a9627809 (release 5.8.37)
  *
  * TODO 同时继承泛型和实现泛型接口需要解析，此处为F
  */

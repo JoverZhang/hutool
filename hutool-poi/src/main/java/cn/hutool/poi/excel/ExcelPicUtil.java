@@ -102,7 +102,11 @@ public class ExcelPicUtil {
 						ctMarker = pic.getPreferredSize().getFrom();
 						sheetIndexPicMap.put(StrUtil.format("{}_{}", ctMarker.getRow(), ctMarker.getCol()), pic.getPictureData());
 					}
+<<<<<<< HEAD
 					// 其他类似于图表等忽略，see: https://gitee.com/dromara/hutool/issues/I38857
+=======
+					// 其他类似于图表等忽略，see: https://gitee.com/chinabugotech/hutool/issues/I38857
+>>>>>>> 0a9627809 (release 5.8.37)
 				}
 			}
 		}

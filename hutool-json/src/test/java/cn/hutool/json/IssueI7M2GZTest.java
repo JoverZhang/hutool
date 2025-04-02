@@ -10,7 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/issues/I7M2GZ
+=======
+ * https://gitee.com/chinabugotech/hutool/issues/I7M2GZ
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class IssueI7M2GZTest {
 

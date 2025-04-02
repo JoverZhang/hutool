@@ -340,6 +340,14 @@ public class IdcardUtil {
 		if (StrUtil.isBlank(idcard)) {
 			return null;
 		}
+<<<<<<< HEAD
+=======
+
+		// issue#IBP6T1 中文空格替换为英文
+		idcard = StrUtil.replace(idcard, "（", "(");
+		idcard = StrUtil.replace(idcard, "）", ")");
+
+>>>>>>> 0a9627809 (release 5.8.37)
 		String[] info = new String[3];
 		String card = idcard.replaceAll("[()]", "");
 		if (card.length() != 8 && card.length() != 9 && idcard.length() != 10) {

@@ -4,7 +4,13 @@ import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.collection.ListUtil;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Console;
+<<<<<<< HEAD
 import cn.hutool.core.map.MapUtil;
+=======
+import cn.hutool.core.lang.TypeReference;
+import cn.hutool.core.map.MapUtil;
+import cn.hutool.core.util.ArrayUtil;
+>>>>>>> 0a9627809 (release 5.8.37)
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.json.test.bean.Price;
 import cn.hutool.json.test.bean.UserA;
@@ -226,7 +232,11 @@ public class JSONUtilTest {
 
 	@Test
 	public void sqlExceptionTest() {
+<<<<<<< HEAD
 		//https://github.com/dromara/hutool/issues/1399
+=======
+		//https://github.com/chinabugotech/hutool/issues/1399
+>>>>>>> 0a9627809 (release 5.8.37)
 		// SQLException实现了Iterable接口，默认是遍历之，会栈溢出，修正后只返回string
 		final JSONObject set = JSONUtil.createObj().set("test", new SQLException("test"));
 		assertEquals("{\"test\":\"java.sql.SQLException: test\"}", set.toString());
@@ -290,4 +300,30 @@ public class JSONUtilTest {
 		final String jsonStr = JSONUtil.toJsonStr(userId);
 		assertEquals("{}", jsonStr);
 	}
+<<<<<<< HEAD
+=======
+
+	/**
+	 * 类型引用数组泛型丢失
+	 */
+	@Test
+	public void issue3873Test() {
+		String json = "{\"results\":[{\"uid\":\"1\"}],\"offset\":0,\"limit\":20,\"total\":0}";
+		Results<Index> deserialize = JSONUtil.toBean(json, (new TypeReference<Results<Index>>() {
+		}), false);
+
+		assertEquals(Results.class, deserialize.getClass());
+		assertEquals(ArrayUtil.getArrayType(Index.class), deserialize.results.getClass());
+	}
+
+	@Data
+	public static class Results<T> {
+		public T[] results;
+	}
+
+	@Data
+	public static class Index {
+		public String uid;
+	}
+>>>>>>> 0a9627809 (release 5.8.37)
 }

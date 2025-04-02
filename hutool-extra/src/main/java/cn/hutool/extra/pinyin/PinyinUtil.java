@@ -32,6 +32,20 @@ public class PinyinUtil {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * 如果c为汉字，则返回大写拼音；如果c不是汉字，则返回String.valueOf(c)
+	 *
+	 * @param c 任意字符，汉字返回拼音，非汉字原样返回
+	 * @param tone 是否返回声调
+	 * @return 汉字返回拼音，非汉字原样返回
+	 */
+	public static String getPinyin(final char c, boolean tone) {
+		return getEngine().getPinyin(c,tone);
+	}
+
+	/**
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * 将输入字符串转为拼音，每个字之间的拼音使用空格分隔
 	 *
 	 * @param str 任意字符，汉字返回拼音，非汉字原样返回
@@ -42,6 +56,20 @@ public class PinyinUtil {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * 将输入字符串转为拼音，每个字之间的拼音使用空格分隔
+	 *
+	 * @param str 任意字符，汉字返回拼音，非汉字原样返回
+	 * @param tone 是否返回声调
+	 * @return 汉字返回拼音，非汉字原样返回
+	 */
+	public static String getPinyin(final String str, boolean tone) {
+		return getPinyin(str, StrUtil.SPACE, tone);
+	}
+
+	/**
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * 将输入字符串转为拼音，以字符为单位插入分隔符
 	 *
 	 * @param str       任意字符，汉字返回拼音，非汉字原样返回
@@ -53,6 +81,21 @@ public class PinyinUtil {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * 将输入字符串转为拼音，以字符为单位插入分隔符
+	 *
+	 * @param str       任意字符，汉字返回拼音，非汉字原样返回
+	 * @param separator 每个字拼音之间的分隔符
+	 * @param tone 是否返回声调
+	 * @return 汉字返回拼音，非汉字原样返回
+	 */
+	public static String getPinyin(final String str, final String separator, boolean tone) {
+		return getEngine().getPinyin(str, separator, tone);
+	}
+
+	/**
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * 将输入字符串转为拼音首字母，其它字符原样返回
 	 *
 	 * @param c 任意字符，汉字返回拼音，非汉字原样返回

@@ -1,7 +1,10 @@
 package cn.hutool.aop.test;
 
 import cn.hutool.aop.proxy.ProxyFactory;
+<<<<<<< HEAD
 import cn.hutool.core.lang.Console;
+=======
+>>>>>>> 0a9627809 (release 5.8.37)
 import cn.hutool.core.thread.ThreadUtil;
 import org.junit.jupiter.api.Test;
 
@@ -30,7 +33,11 @@ public class IssueIBF20ZTest {
 			executorService.submit(() -> {
 				ProxyFactory factory = ProxyFactory.create();
 				if (factory != null) {
+<<<<<<< HEAD
 					Console.log(factory.getClass());
+=======
+					//Console.log(factory.getClass());
+>>>>>>> 0a9627809 (release 5.8.37)
 					successCount.incrementAndGet();
 				}
 				latch.countDown(); // 每个任务完成时，计数减一

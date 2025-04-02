@@ -232,7 +232,11 @@ public class JSONArrayTest {
 		assertEquals(1, jsonArray.size());
 	}
 
+<<<<<<< HEAD
 	// https://github.com/dromara/hutool/issues/1858
+=======
+	// https://github.com/chinabugotech/hutool/issues/1858
+>>>>>>> 0a9627809 (release 5.8.37)
 	@Test
 	public void putTest2() {
 		final JSONArray jsonArray = new JSONArray();

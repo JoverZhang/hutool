@@ -72,7 +72,11 @@ public class UploadTest {
 	@Test
 	@Disabled
 	public void smmsTest(){
+<<<<<<< HEAD
 		// https://github.com/dromara/hutool/issues/2079
+=======
+		// https://github.com/chinabugotech/hutool/issues/2079
+>>>>>>> 0a9627809 (release 5.8.37)
 		// hutool的user agent 被封了
 		String token = "test";
 		String url = "https://sm.ms/api/v2/upload";

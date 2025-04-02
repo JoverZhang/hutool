@@ -40,6 +40,13 @@ public abstract class HttpBase<T> {
 	public static final String HTTP_1_1 = "HTTP/1.1";
 
 	/**
+<<<<<<< HEAD
+=======
+	 * 是否聚合重复请求头
+	 */
+	protected boolean isHeaderAggregated = false;
+	/**
+>>>>>>> 0a9627809 (release 5.8.37)
 	 * 存储头信息
 	 */
 	protected Map<String, List<String>> headers = new HashMap<>();
@@ -276,6 +283,31 @@ public abstract class HttpBase<T> {
 		this.headers.clear();
 		return (T) this;
 	}
+<<<<<<< HEAD
+=======
+
+	/**
+	 * 设置是否需要聚合重复的请求头，将重复的请求头聚合为,拼接
+	 *
+	 * @param aggregate 是否需要聚合
+	 * @return this
+	 * @since 5.8.37
+	 */
+	public T headerAggregation(boolean aggregate) {
+		this.isHeaderAggregated = aggregate;
+		return (T) this;
+	}
+
+	/**
+	 * 获取是否需要聚合请求头状态
+	 *
+	 * @return isHeaderAggregated 请求头聚合状态
+	 * @since 5.8.37
+	 */
+	public boolean isHeaderAggregated() {
+		return isHeaderAggregated;
+	}
+>>>>>>> 0a9627809 (release 5.8.37)
 	// ---------------------------------------------------------------- Headers end
 
 	/**

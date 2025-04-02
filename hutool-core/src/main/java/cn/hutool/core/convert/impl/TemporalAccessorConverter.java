@@ -206,7 +206,11 @@ public class TemporalAccessorConverter extends AbstractConverter<TemporalAccesso
 
 		final Instant instant;
 		if (GlobalCustomFormat.FORMAT_SECONDS.equals(this.format)) {
+<<<<<<< HEAD
 			// https://gitee.com/dromara/hutool/issues/I6IS5B
+=======
+			// https://gitee.com/chinabugotech/hutool/issues/I6IS5B
+>>>>>>> 0a9627809 (release 5.8.37)
 			// Unix时间戳
 			instant = Instant.ofEpochSecond(time);
 		} else {

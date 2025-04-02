@@ -20,7 +20,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+<<<<<<< HEAD
  * https://github.com/dromara/hutool/issues/3136
+=======
+ * https://github.com/chinabugotech/hutool/issues/3136
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class Issue3136Test {
 

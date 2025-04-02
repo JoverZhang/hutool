@@ -310,7 +310,11 @@ public class HttpRequest extends HttpBase<HttpRequest> {
 	 * 它会验证 SSL 服务器在数字证书中返回的主机名是否与用于连接 SSL 服务器的 URL 主机名相匹配。如果主机名不匹配，则删除此连接。<br>
 	 * 因此weblogic不支持https的sni协议的主机名验证，此时需要将此值设置为sun.net.www.protocol.https.Handler对象。
 	 * <p>
+<<<<<<< HEAD
 	 * 相关issue见：<a href="https://gitee.com/dromara/hutool/issues/IMD1X">https://gitee.com/dromara/hutool/issues/IMD1X</a>
+=======
+	 * 相关issue见：<a href="https://gitee.com/chinabugotech/hutool/issues/IMD1X">https://gitee.com/chinabugotech/hutool/issues/IMD1X</a>
+>>>>>>> 0a9627809 (release 5.8.37)
 	 *
 	 * @param urlHandler {@link URLStreamHandler}
 	 * @return this
@@ -1247,7 +1251,11 @@ public class HttpRequest extends HttpBase<HttpRequest> {
 			// issue#3462 自定义body长度
 			.setFixedLengthStreamingMode(this.fixedContentLength)
 			// 覆盖默认Header
+<<<<<<< HEAD
 			.header(this.headers, false);
+=======
+			.header(this.headers, false, this.isHeaderAggregated);
+>>>>>>> 0a9627809 (release 5.8.37)
 
 		if (null != this.cookie) {
 			// 当用户自定义Cookie时，全局Cookie自动失效
@@ -1303,7 +1311,11 @@ public class HttpRequest extends HttpBase<HttpRequest> {
 				throw new HttpException(e);
 			}
 			// 支持自动重定向时处理cookie
+<<<<<<< HEAD
 			// https://github.com/dromara/hutool/issues/2960
+=======
+			// https://github.com/chinabugotech/hutool/issues/2960
+>>>>>>> 0a9627809 (release 5.8.37)
 			if (config.followRedirectsCookie) {
 				GlobalCookieManager.store(httpConnection);
 			}

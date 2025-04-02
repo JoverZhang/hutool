@@ -4,7 +4,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/issues/I4RBZ4
+=======
+ * https://gitee.com/chinabugotech/hutool/issues/I4RBZ4
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class IssueI4RBZ4Test {
 

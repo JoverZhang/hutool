@@ -9,7 +9,11 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/issues/IA8WE0
+=======
+ * https://gitee.com/chinabugotech/hutool/issues/IA8WE0
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class IssueIA8WE0Test {
 	@Test

@@ -854,7 +854,11 @@ public class CollUtilTest {
 
 	@Test
 	public void setValueByMapTest() {
+<<<<<<< HEAD
 		// https://gitee.com/dromara/hutool/pulls/482
+=======
+		// https://gitee.com/chinabugotech/hutool/pulls/482
+>>>>>>> 0a9627809 (release 5.8.37)
 		final List<Person> people = Arrays.asList(
 			new Person("aa", 12, "man", 1),
 			new Person("bb", 13, "woman", 2),

@@ -10,7 +10,11 @@ import java.util.Stack;
 
 /**
  * 数学表达式计算工具类<br>
+<<<<<<< HEAD
  * 见：https://github.com/dromara/hutool/issues/1090#issuecomment-693750140
+=======
+ * 见：https://github.com/chinabugotech/hutool/issues/1090#issuecomment-693750140
+>>>>>>> 0a9627809 (release 5.8.37)
  *
  * @author trainliang, looly
  * @since 5.4.3

@@ -9,7 +9,11 @@
 	<parent>
 		<groupId>cn.hutool</groupId>
 		<artifactId>hutool-parent</artifactId>
+<<<<<<< HEAD
 		<version>5.8.36</version>
+=======
+		<version>5.8.37</version>
+>>>>>>> 0a9627809 (release 5.8.37)
 	</parent>
 
 	<artifactId>hutool-socket</artifactId>

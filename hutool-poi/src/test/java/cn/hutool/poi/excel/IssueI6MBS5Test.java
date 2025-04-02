@@ -14,7 +14,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 /**
+<<<<<<< HEAD
  * https://gitee.com/dromara/hutool/issues/I6MBS5<br>
+=======
+ * https://gitee.com/chinabugotech/hutool/issues/I6MBS5<br>
+>>>>>>> 0a9627809 (release 5.8.37)
  * 经过测试，发现BigExcelWriter中的comment会错位<br>
  * 修正方式见: https://stackoverflow.com/questions/28169011/using-sxssfapache-poi-and-adding-comment-does-not-generate-proper-excel-file
  */

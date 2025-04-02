@@ -4,7 +4,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 /**
+<<<<<<< HEAD
  * https://github.com/dromara/hutool/issues/2009
+=======
+ * https://github.com/chinabugotech/hutool/issues/2009
+>>>>>>> 0a9627809 (release 5.8.37)
  */
 public class Issue2009Test {
 

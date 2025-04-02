@@ -4,8 +4,17 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+<<<<<<< HEAD
 import lombok.Data;
 import static org.junit.jupiter.api.Assertions.*;
+=======
+
+import cn.hutool.core.lang.TypeReference;
+import lombok.Data;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+>>>>>>> 0a9627809 (release 5.8.37)
 import org.junit.jupiter.api.Test;
 
 public class TypeUtilTest {
@@ -97,4 +106,32 @@ public class TypeUtilTest {
 		private T level;
 	}
 
+<<<<<<< HEAD
+=======
+
+	/**
+	 * fix github:issue#3873
+	 */
+	@Test
+	public void getActualTypeForGenericArrayTest() {
+		TypeReference<GenericArray<GenericArrayEle>> typeReference = new TypeReference<GenericArray<GenericArrayEle>>() {
+
+		};
+
+		Type levelType = TypeUtil.getFieldType(GenericArray.class, "level");
+		Type actualType = TypeUtil.getActualType(typeReference.getType(), levelType);
+		assertEquals(ArrayUtil.getArrayType(GenericArrayEle.class), actualType);
+	}
+
+	@Data
+	public static class GenericArray<T> {
+		private T[] level;
+	}
+
+	@Data
+	public static class GenericArrayEle {
+		private Long uid;
+	}
+
+>>>>>>> 0a9627809 (release 5.8.37)
 }

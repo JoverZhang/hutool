@@ -416,7 +416,11 @@ public class StrUtilTest {
 		containsAny = StrUtil.containsAny("aaabbbccc", "d", "c");
 		assertTrue(containsAny);
 
+<<<<<<< HEAD
 		// https://gitee.com/dromara/hutool/issues/I7WSYD
+=======
+		// https://gitee.com/chinabugotech/hutool/issues/I7WSYD
+>>>>>>> 0a9627809 (release 5.8.37)
 		containsAny = StrUtil.containsAny("你好啊", "嗯", null);
 		assertFalse(containsAny);
 	}
@@ -651,7 +655,11 @@ public class StrUtilTest {
 
 	@Test
 	public void issueI6KKFUTest() {
+<<<<<<< HEAD
 		// https://gitee.com/dromara/hutool/issues/I6KKFU
+=======
+		// https://gitee.com/chinabugotech/hutool/issues/I6KKFU
+>>>>>>> 0a9627809 (release 5.8.37)
 		final String template = "I''m {0} years old.";
 		final String result = StrUtil.indexedFormat(template, 10);
 		assertEquals("I'm 10 years old.", result);

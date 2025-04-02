@@ -2199,7 +2199,11 @@ public class CollUtil {
 			iter = (Iterator) value;
 		} else if (value instanceof Iterable) {
 			if(value instanceof Map && BeanUtil.isBean(TypeUtil.getClass(elementType))){
+<<<<<<< HEAD
 				//https://github.com/dromara/hutool/issues/3139
+=======
+				//https://github.com/chinabugotech/hutool/issues/3139
+>>>>>>> 0a9627809 (release 5.8.37)
 				// 如果值为Map，而目标为一个Bean，则Map应整体转换为Bean，而非拆分成Entry转换
 				iter = new ArrayIter<>(new Object[]{value});
 			}else{

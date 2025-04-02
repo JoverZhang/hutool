@@ -11,7 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+<<<<<<< HEAD
  * https://github.com/dromara/hutool/issues/3048
+=======
+ * https://github.com/chinabugotech/hutool/issues/3048
+>>>>>>> 0a9627809 (release 5.8.37)
  * Excel导出javaBean中有BigDecimal类型精度流失
  *
  */
